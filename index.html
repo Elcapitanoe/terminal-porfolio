@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Domi Adiwijaya</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/terminal-icon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Domi Adiwijaya - Home Lab Enthusiast & Software Developer Portfolio" />
+  <meta name="keywords" content="Domi Adiwijaya, developer, portfolio, home lab, Indonesia" />
+  <meta name="author" content="Domi Adiwijaya" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://domiadi.com/" />
+  <meta property="og:title" content="Domi Adiwijaya - Portfolio" />
+  <meta property="og:description" content="Home Lab Enthusiast & Software Developer from Indonesia" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://domiadi.com/" />
+  <meta property="twitter:title" content="Domi Adiwijaya - Portfolio" />
+  <meta property="twitter:description" content="Home Lab Enthusiast & Software Developer from Indonesia" />
+  
+  <title>Domi Adiwijaya - Portfolio</title>
+  
+  <!-- Preload critical fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="terminal-window">
-    <div class="terminal-header">
-      <div class="buttons">
-        <span class="btn close"></span>
-        <span class="btn minimize"></span>
-        <span class="btn maximize"></span>
-      </div>
-      <div class="title">debian@server:~</div>
-    </div>
-    <div class="terminal-body">
-<div class="prompt">cat /usr/data/whoami.txt</div>
-Name         : Domi Adiwijaya
-Nationality  : Indonesia
-Gender       : Male
-Address      : Cilegon City, Banten
-Email        : hello@domiadi.com
-Hobby        : Home Lab Enthusiast
-<div></div>      
-<div class="prompt"><span class="cursor"></span></div>
-    </div>
-  </div>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
 </body>
 </html>
