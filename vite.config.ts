@@ -6,12 +6,12 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': resolve(__dirname, './src'),
-      '@components': resolve(__dirname, './src/components'),
-      '@hooks': resolve(__dirname, './src/hooks'),
-      '@utils': resolve(__dirname, './src/utils'),
-      '@types': resolve(__dirname, './src/types'),
-      '@styles': resolve(__dirname, './src/styles')
+      '@': resolve(process.cwd(), './src'),
+      '@components': resolve(process.cwd(), './src/components'),
+      '@hooks': resolve(process.cwd(), './src/hooks'),
+      '@utils': resolve(process.cwd(), './src/utils'),
+      '@types': resolve(process.cwd(), './src/types'),
+      '@styles': resolve(process.cwd(), './src/styles')
     }
   },
   build: {

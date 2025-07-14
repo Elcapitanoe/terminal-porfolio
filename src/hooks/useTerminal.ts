@@ -4,7 +4,7 @@ import { getPersonalInfo } from '../utils/personalInfo'
 
 export const useTerminal = (): TerminalState => {
   const [commands, setCommands] = useState<TerminalCommand[]>([])
-  const [currentInput, setCurrentInput] = useState('')
+  const [currentInput] = useState('')
   const [isTyping, setIsTyping] = useState(true)
 
   useEffect(() => {
@@ -28,7 +28,7 @@ export const useTerminal = (): TerminalState => {
       setIsTyping(false)
     }
 
-    initializeTerminal()
+    void initializeTerminal()
   }, [])
 
   return {
